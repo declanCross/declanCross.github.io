@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
+/* Tailwind CSS breakpoints */
+/* @screen xs { */
+/* Small screens (min-width: 425px) */
+/* } */
+/* @screen sm { */
+/* Small screens (min-width: 640px) */
+/* } */
+/* @screen md { */
+/* Medium screens (min-width: 768px) */
+/* } */
+/* @screen lg { */
+/* Large screens (min-width: 1024px) */
+/* } */
+/* @screen xl { */
+/* Extra large screens (min-width: 1280px) */
+/* } */
+/* @screen 2xl { */
+/* 2x Extra large screens (min-width: 1536px) */
+/* } */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--color-base-dark: #0a0a0a;
+	--color-base-light: #fafafa;
+	--color-primary: #fff6dd;
+	--color-secondary-green: #118c30;
+	--color-secondary-blue: #0e53c2;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-base-dark: var(--color-base-dark);
+	--color-base-light: var(--color-base-light);
+	--color-primary: var(--color-primary);
+	--color-secondary-blue: var(--color-secondary-blue);
+	--color-secondary-green: var(--color-secondary-green);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+	--breakpoint-xs: 26.5625rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--color-primary);
+	color: var(--color-base-dark);
+	font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+	overflow-x: hidden;
 }
