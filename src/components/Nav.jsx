@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Nav() {
 	return (
-		<>
-			{/* navbar container */}
-			<nav className="flex h-14">
+		<nav className="fixed top-0 left-0 w-full z-50">
+			{/* nav container */}
+			<div className="flex h-14">
 				{/* logo and hamburger */}
 				<div className="flex justify-between pl-2 pr-6.5 items-center w-32">
 					{/* logo */}
@@ -33,7 +33,7 @@ export default function Nav() {
 						<div className="bg-secondary-blue h-full w-[4px]" />
 					</div>
 				</div>
-			</nav>
-		</>
+			</div>
+		</nav>
 	)
 }
