@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 						{children}
 					</div>
 					{/* side colors swoop */}
-					<div className="flex w-[10px] h-screen">
+					<div className="flex w-[10px] h-100vh">
 						<div className="bg-secondary-green h-full w-[5px]" />
 						<div className="bg-secondary-blue h-full w-[5px]" />
 					</div>
