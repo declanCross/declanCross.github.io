@@ -29,8 +29,8 @@ export default function Nav() {
 				<div className="w-[calc(100%-8rem)] h-full">
 					<div className="bg-secondary-blue h-1/2 w-full" />
 					<div className="flex h-1/2 w-full">
-						<div className="bg-secondary-green h-full w-[calc(100%-4px)]" />
-						<div className="bg-secondary-blue h-full w-[4px]" />
+						<div className="bg-secondary-green h-full w-[calc(100%-5px)]" />
+						<div className="bg-secondary-blue h-full w-[5px]" />
 					</div>
 				</div>
 			</div>

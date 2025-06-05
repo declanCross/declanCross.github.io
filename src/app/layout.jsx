@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
 					{/* body */}
 					<div className="w-11/12 mx-auto mt-14">{children}</div>
 					{/* side colors swoop */}
-					<div className="flex w-[8px] h-screen">
-						<div className="bg-secondary-green h-full w-[4px]" />
-						<div className="bg-secondary-blue h-full w-[4px]" />
+					<div className="flex w-[10px] h-screen">
+						<div className="bg-secondary-green h-full w-[5px]" />
+						<div className="bg-secondary-blue h-full w-[5px]" />
 					</div>
 				</div>
 			</body>
