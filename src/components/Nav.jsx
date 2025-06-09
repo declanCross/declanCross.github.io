@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Nav() {
 	return (
-		<nav className="fixed top-0 left-0 w-full z-50">
+		<nav className="fixed top-0 left-0 w-full z-50 bg-primary">
 			{/* nav container */}
 			<div className="flex h-14">
 				{/* logo and hamburger */}
@@ -39,7 +39,7 @@ export default function Nav() {
 								href="#"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
 							>
-								How Can I Help You?
+								Services
 							</a>
 						</li>
 						<li>
