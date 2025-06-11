@@ -186,18 +186,25 @@ export default function Home() {
 				</div>
 			</section>
 			{/* review 1 */}
-			<section className="bg-base-light py-8 ">
-				<div>
-					<p>"</p>
-					<p>
-						Declan made me the best website I could have asked for. He listened
-						to me and implemented everything I wanted. Highly recommend!
-					</p>
-					<p>"</p>
+			<section className="bg-base-light py-8 px-4">
+				{/* content */}
+				<div className="max-w-prose">
+					{/* quote */}
+					<div className="flex items-start relative mb-4">
+						<p className="text-3xl leading-none -mt-1">"</p>
+						<p className="font-medium mx-2 text-justify">
+							Declan made me the best website I could have asked for. He
+							listened to me and implemented everything I wanted. Highly
+							recommend!
+						</p>
+						<p className="text-3xl leading-none self-end -mb-1">"</p>
+					</div>
+					<p className="font-medium ml-4.5">Person</p>
+					<p className="font-medium text-neutral-500 ml-4.5">Title, Company</p>
 				</div>
-				<p>Person</p>
-				<p>Title, Company</p>
 			</section>
+			{/* contact */}
+			<section className="bg-secondary-blue pt-8 pb-24"></section>
 		</>
 	)
 }
