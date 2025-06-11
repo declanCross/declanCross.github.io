@@ -191,13 +191,15 @@ export default function Home() {
 				<div className="max-w-prose">
 					{/* quote */}
 					<div className="flex items-start relative mb-4">
-						<p className="text-3xl leading-none -mt-1">"</p>
-						<p className="font-medium mx-2 text-justify">
+						<p className="text-3xl leading-none -mt-1 font-medium">"</p>
+						<p className="font-semibold mx-2 text-justify">
 							Declan made me the best website I could have asked for. He
 							listened to me and implemented everything I wanted. Highly
 							recommend!
 						</p>
-						<p className="text-3xl leading-none self-end -mb-1">"</p>
+						<p className="text-3xl leading-none self-end -mb-1 font-medium">
+							"
+						</p>
 					</div>
 					<p className="font-medium ml-4.5">Person</p>
 					<p className="font-medium text-neutral-500 ml-4.5">Title, Company</p>
