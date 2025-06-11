@@ -186,9 +186,9 @@ export default function Home() {
 				</div>
 			</section>
 			{/* review 1 */}
-			<section className="bg-base-light py-8 px-4">
+			<section className="bg-base-light py-16 px-4">
 				{/* content */}
-				<div className="max-w-prose">
+				<div className="max-w-prose mx-auto">
 					{/* quote */}
 					<div className="flex items-start relative mb-4">
 						<p className="text-3xl leading-none -mt-1 font-medium">"</p>
