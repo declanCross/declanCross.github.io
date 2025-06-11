@@ -1,3 +1,4 @@
+import ProjectCard from "@/components/ProjectCard"
 import ServiceCard from "@/components/ServiceCard"
 import Image from "next/image"
 
@@ -42,7 +43,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* services */}
-			<section className="mt-12 w-11/12 max-w-prose lg:max-w-7xl mx-auto">
+			<section className="mt-12 mb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto">
 				<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit my-4">
 					<h2 className="text-primary font-bold text-xl">SERVICES</h2>
 				</div>
@@ -121,6 +122,81 @@ export default function Home() {
 						text2="Already have a website? I'll rebuild and optimize your existing site using the most up-to-date techniques so that it works better under-the-hood."
 					/>
 				</div>
+			</section>
+			{/* portfolio */}
+			<section className="bg-secondary-green pt-8 pb-24">
+				{/* content */}
+				<div className="w-11/12 max-w-prose lg:max-w-7xl mx-auto">
+					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4">
+						<h2 className="text-base-dark font-bold text-xl">PORTFOLIO</h2>
+					</div>
+					{/* project cards */}
+					<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+						<ProjectCard
+							image={{
+								src: "/images/image_placeholder_150.png",
+								width: 800,
+								height: 600,
+							}}
+							title="Tubon-Salvador Dentistry"
+							link="https://www.tubonsalvadordentistry.com"
+						/>
+						<ProjectCard
+							image={{
+								src: "/images/image_placeholder_150.png",
+								width: 800,
+								height: 600,
+							}}
+							title="kr.ink"
+							link="https://www.bykrink.com"
+						/>
+						<ProjectCard
+							image={{
+								src: "/images/image_placeholder_150.png",
+								width: 800,
+								height: 600,
+							}}
+							title="Beyond The Game"
+							link="https://www.gobeyondthegame.ca"
+						/>
+						<ProjectCard
+							image={{
+								src: "/images/image_placeholder_150.png",
+								width: 800,
+								height: 600,
+							}}
+							title="Le Dream Hotel"
+							link="https://www.ledreamhotel.info"
+						/>
+						<ProjectCard
+							image={{
+								src: "/images/image_placeholder_150.png",
+								width: 800,
+								height: 600,
+							}}
+							title="2% Better"
+							link="https://2percentbetter.vercel.app"
+						/>
+					</div>
+					{/* <div className="flex justify-center items-center px-4 py-2 border-4 border-primary w-fit my-12 shadow-md mx-auto">
+						<h2 className="text-primary font-bold text-xl">
+							See More Projects
+						</h2>
+					</div> */}
+				</div>
+			</section>
+			{/* review 1 */}
+			<section className="bg-base-light py-8 ">
+				<div>
+					<p>"</p>
+					<p>
+						Declan made me the best website I could have asked for. He listened
+						to me and implemented everything I wanted. Highly recommend!
+					</p>
+					<p>"</p>
+				</div>
+				<p>Person</p>
+				<p>Title, Company</p>
 			</section>
 		</>
 	)
