@@ -127,11 +127,13 @@ export default function Home() {
 			<section className="bg-secondary-green pt-8 pb-24">
 				{/* content */}
 				<div className="w-11/12 max-w-prose lg:max-w-7xl mx-auto">
-					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4">
-						<h2 className="text-base-dark font-bold text-xl">PORTFOLIO</h2>
+					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4 lg:mx-auto">
+						<h2 className="text-secondary-green font-bold text-xl">
+							PORTFOLIO
+						</h2>
 					</div>
 					{/* project cards */}
-					<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+					<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 						<ProjectCard
 							image={{
 								src: "/images/image_placeholder_150.png",
@@ -206,7 +208,69 @@ export default function Home() {
 				</div>
 			</section>
 			{/* contact */}
-			<section className="bg-secondary-blue pt-8 pb-24"></section>
+			<section className="bg-secondary-blue pt-16 pb-20">
+				{/* content */}
+				<div className="w-11/12 max-w-prose mx-auto">
+					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4 lg:mx-auto">
+						<h2 className="text-secondary-blue font-bold text-xl">CONTACT</h2>
+					</div>
+					<p className="text-xl font-bold text-primary">
+						Tell me about your website idea and let's make your vision a
+						reality.
+					</p>
+					{/* form */}
+					<form className="mt-6 text-neutral-600 font-medium">
+						<div className="grid grid-cols-1 gap-4">
+							{/* name */}
+							<input
+								type="text"
+								placeholder="Name"
+								className="bg-primary p-3"
+							/>
+							{/* email */}
+							<input
+								type="email"
+								placeholder="Email"
+								className="bg-primary p-3"
+							/>
+							{/* phone */}
+							<input
+								type="tel"
+								placeholder="Phone (optional)"
+								className="bg-primary p-3"
+							/>
+						</div>
+						<textarea
+							placeholder="Tell me about your idea."
+							className="bg-primary p-3 mt-4 w-full"
+							rows={10}
+						></textarea>
+						<button className="flex justify-center items-center px-4 py-2 border-4 border-primary w-full my-4 shadow-md mx-auto">
+							<h2 className="text-primary font-bold text-xl">Submit</h2>
+						</button>
+					</form>
+				</div>
+			</section>
+			{/* review 2 */}
+			<section className="bg-base-light py-16 px-4">
+				{/* content */}
+				<div className="max-w-prose mx-auto">
+					{/* quote */}
+					<div className="flex items-start relative mb-4">
+						<p className="text-3xl leading-none -mt-1 font-medium">"</p>
+						<p className="font-semibold mx-2 text-justify">
+							Declan made me the best website I could have asked for. He
+							listened to me and implemented everything I wanted. Highly
+							recommend!
+						</p>
+						<p className="text-3xl leading-none self-end -mb-1 font-medium">
+							"
+						</p>
+					</div>
+					<p className="font-medium ml-4.5">Person</p>
+					<p className="font-medium text-neutral-500 ml-4.5">Title, Company</p>
+				</div>
+			</section>
 		</>
 	)
 }
