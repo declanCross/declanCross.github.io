@@ -1,3 +1,4 @@
+import Faq from "@/components/Faq"
 import ProjectCard from "@/components/ProjectCard"
 import ServiceCard from "@/components/ServiceCard"
 import Image from "next/image"
@@ -269,6 +270,17 @@ export default function Home() {
 					</div>
 					<p className="font-medium ml-4.5">Person</p>
 					<p className="font-medium text-neutral-500 ml-4.5">Title, Company</p>
+				</div>
+			</section>
+			{/* faq */}
+			<section className="pt-16 pb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto">
+				<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit my-4 lg:mx-auto">
+					<h2 className="text-primary font-bold text-lg xs:text-xl">
+						FREQUENTLY ASKED QUESTIONS
+					</h2>
+				</div>
+				<div className="mt-12">
+					<Faq />
 				</div>
 			</section>
 		</>
