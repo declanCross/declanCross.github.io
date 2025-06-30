@@ -131,7 +131,7 @@ export default function Home() {
 			{/* portfolio */}
 			<section
 				id="portfolio"
-				className="scroll-mt-14 bg-secondary-green pt-14 pb-24"
+				className="scroll-mt-6 lg:scroll-mt-14 bg-secondary-green pt-16 pb-24"
 			>
 				{/* content */}
 				<div className="w-11/12 max-w-prose lg:max-w-7xl mx-auto">
@@ -141,48 +141,48 @@ export default function Home() {
 						</h2>
 					</div>
 					{/* project cards */}
-					<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+					<div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 						<ProjectCard
 							image={{
-								src: "/images/image_placeholder_150.png",
-								width: 800,
-								height: 600,
+								src: "/images/tubon-salvador-dentistry2.png",
+								width: 1884,
+								height: 1884,
 							}}
 							title="Tubon-Salvador Dentistry"
 							link="https://www.tubonsalvadordentistry.com"
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/image_placeholder_150.png",
-								width: 800,
-								height: 600,
+								src: "/images/krink1.png",
+								width: 1883,
+								height: 1884,
 							}}
 							title="kr.ink"
 							link="https://www.bykrink.com"
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/image_placeholder_150.png",
-								width: 800,
-								height: 600,
+								src: "/images/btg1.png",
+								width: 1876,
+								height: 1884,
 							}}
 							title="Beyond The Game"
 							link="https://www.gobeyondthegame.ca"
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/image_placeholder_150.png",
-								width: 800,
-								height: 600,
+								src: "/images/ledream1.png",
+								width: 1875,
+								height: 1784,
 							}}
 							title="Le Dream Hotel"
 							link="https://www.ledreamhotel.info"
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/image_placeholder_150.png",
-								width: 800,
-								height: 600,
+								src: "/images/2percentbetter1.png",
+								width: 1883,
+								height: 1884,
 							}}
 							title="2% Better"
 							link="https://2percentbetter.vercel.app"
