@@ -143,8 +143,11 @@ export default function Nav() {
 					<ul className="hidden lg:flex w-[700px] space-x-6 text-base-dark font-bold ml-8">
 						<li>
 							<a
-								href="#"
+								href="/#"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								onClick={() => {
+									window.scrollTo({ top: 0 })
+								}}
 							>
 								Home
 							</a>
