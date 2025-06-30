@@ -218,7 +218,7 @@ export default function Home() {
 			{/* contact */}
 			<section
 				id="contact"
-				className="scroll-mt-14 bg-secondary-blue pt-16 pb-20"
+				className="scroll-mt-0 lg:scroll-mt-14 bg-secondary-blue pt-16 pb-20"
 			>
 				{/* content */}
 				<div className="w-11/12 max-w-prose mx-auto">
@@ -285,7 +285,7 @@ export default function Home() {
 			{/* faq */}
 			<section
 				id="faq"
-				className="scroll-mt-14 pt-16 pb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto"
+				className="scrol-mt-0 lg:scroll-mt-14 pt-16 pb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto"
 			>
 				<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit my-4 lg:mx-auto">
 					<h2 className="text-primary font-bold text-lg xs:text-xl">
@@ -299,7 +299,7 @@ export default function Home() {
 			{/* about me */}
 			<section
 				id="about-me"
-				className="scroll-mt-14 pt-16 pb-24 w-11/12 mx-auto"
+				className="scroll-mt-0 lg:scroll-mt-14 pt-16 pb-24 w-11/12 mx-auto"
 			>
 				{/* about container */}
 				<div className="bg-base-light px-6 md:px-8 py-8 max-w-3xl mx-auto">
