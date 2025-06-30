@@ -1,7 +1,9 @@
 import Faq from "@/components/Faq"
+import Footer from "@/components/Footer"
 import ProjectCard from "@/components/ProjectCard"
 import ServiceCard from "@/components/ServiceCard"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
 	return (
@@ -322,6 +324,8 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+			{/* footer */}
+			<Footer />
 		</>
 	)
 }
