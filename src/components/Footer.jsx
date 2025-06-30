@@ -67,10 +67,22 @@ export default function Footer() {
 				{/* bottom links and copyright */}
 				<p className="font-medium text-sm text-neutral-600 text-center lg:mt-38">
 					<span>
-						<Link href="/terms-and-conditions">Terms & Conditions</Link>
+						<Link
+							href="/terms-and-conditions"
+							className="hover:text-secondary-blue transform transition-colors duration-300"
+						>
+							Terms & Conditions
+						</Link>
 					</span>
 					<span className="text-base-dark mx-2">|</span>
-					<span>Sitemap</span>
+					<span>
+						<Link
+							href="/sitemap-0.xml"
+							className="hover:text-secondary-blue transform transition-colors duration-300"
+						>
+							Sitemap
+						</Link>
+					</span>
 				</p>
 				<p className="text-sm my-2 font-medium text-center">
 					<span>© 2025 Cross Development Services</span>
