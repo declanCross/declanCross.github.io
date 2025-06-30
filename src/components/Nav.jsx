@@ -36,7 +36,7 @@ export default function Nav() {
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/#services"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
 							>
 								Services
@@ -44,7 +44,7 @@ export default function Nav() {
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/#portfolio"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
 							>
 								Portfolio
@@ -52,7 +52,7 @@ export default function Nav() {
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/#contact"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
 							>
 								Contact
@@ -60,7 +60,7 @@ export default function Nav() {
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/#faq"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
 							>
 								FAQ
@@ -68,7 +68,7 @@ export default function Nav() {
 						</li>
 						<li>
 							<a
-								href="#"
+								href="/#about-me"
 								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
 							>
 								About Me

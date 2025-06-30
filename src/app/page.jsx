@@ -3,7 +3,6 @@ import Footer from "@/components/Footer"
 import ProjectCard from "@/components/ProjectCard"
 import ServiceCard from "@/components/ServiceCard"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function Home() {
 	return (
@@ -46,7 +45,10 @@ export default function Home() {
 				</div>
 			</section>
 			{/* services */}
-			<section className="mt-12 mb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto">
+			<section
+				id="services"
+				className="scroll-mt-20 mt-12 mb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto"
+			>
 				<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit my-4">
 					<h2 className="text-primary font-bold text-xl">SERVICES</h2>
 				</div>
@@ -127,7 +129,10 @@ export default function Home() {
 				</div>
 			</section>
 			{/* portfolio */}
-			<section className="bg-secondary-green pt-8 pb-24">
+			<section
+				id="portfolio"
+				className="scroll-mt-14 bg-secondary-green pt-14 pb-24"
+			>
 				{/* content */}
 				<div className="w-11/12 max-w-prose lg:max-w-7xl mx-auto">
 					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4 lg:mx-auto">
@@ -211,7 +216,10 @@ export default function Home() {
 				</div>
 			</section>
 			{/* contact */}
-			<section className="bg-secondary-blue pt-16 pb-20">
+			<section
+				id="contact"
+				className="scroll-mt-14 bg-secondary-blue pt-16 pb-20"
+			>
 				{/* content */}
 				<div className="w-11/12 max-w-prose mx-auto">
 					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4 lg:mx-auto">
@@ -275,7 +283,10 @@ export default function Home() {
 				</div>
 			</section>
 			{/* faq */}
-			<section className="pt-16 pb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto">
+			<section
+				id="faq"
+				className="scroll-mt-14 pt-16 pb-24 w-11/12 max-w-prose lg:max-w-7xl mx-auto"
+			>
 				<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit my-4 lg:mx-auto">
 					<h2 className="text-primary font-bold text-lg xs:text-xl">
 						FREQUENTLY ASKED QUESTIONS
@@ -286,7 +297,10 @@ export default function Home() {
 				</div>
 			</section>
 			{/* about me */}
-			<section className="pt-16 pb-24 w-11/12 mx-auto">
+			<section
+				id="about-me"
+				className="scroll-mt-14 pt-16 pb-24 w-11/12 mx-auto"
+			>
 				{/* about container */}
 				<div className="bg-base-light px-6 md:px-8 py-8 max-w-3xl mx-auto">
 					<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit mb-6 md:mx-auto">
