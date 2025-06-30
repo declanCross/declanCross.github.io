@@ -66,7 +66,9 @@ export default function Footer() {
 				</div>
 				{/* bottom links and copyright */}
 				<p className="font-medium text-sm text-neutral-600 text-center lg:mt-38">
-					<span>Terms & Conditions</span>
+					<span>
+						<Link href="/terms-and-conditions">Terms & Conditions</Link>
+					</span>
 					<span className="text-base-dark mx-2">|</span>
 					<span>Sitemap</span>
 				</p>
