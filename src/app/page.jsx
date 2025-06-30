@@ -283,6 +283,45 @@ export default function Home() {
 					<Faq />
 				</div>
 			</section>
+			{/* about me */}
+			<section className="pt-16 pb-24 w-11/12 mx-auto">
+				{/* about container */}
+				<div className="bg-base-light px-6 md:px-8 py-8 max-w-3xl mx-auto">
+					<div className="flex justify-center items-center px-4 py-2 bg-base-dark w-fit mb-6 md:mx-auto">
+						<h2 className="text-primary font-bold text-lg xs:text-xl">
+							ABOUT ME
+						</h2>
+					</div>
+					{/* content */}
+					<div className="md:flex md:flex-row-reverse">
+						<div className="md:w-1/2">
+							<Image
+								src="/images/webp/dec_icon_hq.webp"
+								alt="Declan Cross"
+								width={1921}
+								height={1921}
+								className="w-full h-auto"
+							/>
+						</div>
+						{/* text */}
+						<div className="max-w-prose md:w-1/2 md:mr-6">
+							<p className="font-medium mt-4 md:mt-0">
+								Hi, my name's Declan Cross, and I started Cross Development
+								Services in 2023 as a way of staying busy while supporting my
+								Wife and newborn Son while living abroad in Australia.
+							</p>
+							<p className="font-medium mt-2">
+								I believe the most enjoyable things in life are those you WANT
+								to do. That's why I resonate with web development; it gives me a
+								creative outlet while scratching a problem-solving itch, and it
+								helps my clients' businesses become more profitable and
+								efficient, which frees up time for them to do more of what{" "}
+								<em>they</em> want to do.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</>
 	)
 }
