@@ -10,13 +10,49 @@ export default function ContactForm() {
 		message: "",
 	})
 	const [status, setStatus] = useState(null)
+	const [errors, setErrors] = useState({})
+
+	const validate = () => {
+		const newErrors = {}
+
+		// Name: required, at least 2 characters
+		if (!form.name.trim()) {
+			newErrors.name = "Name is required."
+		} else if (form.name.trim().length < 2) {
+			newErrors.name = "Name must be at least 2 characters."
+		}
+
+		// Email: required, valid email format
+		if (!form.email.trim()) {
+			newErrors.email = "Email is required."
+		} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+			newErrors.email = "Please enter a valid email address."
+		}
+
+		// Phone: optional, but if present, must be only numbers, spaces, dashes, parentheses, or plus
+		if (form.phone && /[a-zA-Z]/.test(form.phone)) {
+			newErrors.phone = "Phone number can only contain numbers and symbols."
+		}
+
+		// Message: required, at least 10 characters
+		if (!form.message.trim()) {
+			newErrors.message = "Message is required."
+		} else if (form.message.trim().length < 10) {
+			newErrors.message = "Message must be at least 10 characters."
+		}
+
+		setErrors(newErrors)
+		return Object.keys(newErrors).length === 0
+	}
 
 	const handleChange = (e) => {
 		setForm({ ...form, [e.target.name]: e.target.value })
+		setErrors({ ...errors, [e.target.name]: undefined }) // Clear error on change
 	}
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
+		if (!validate()) return
 		setStatus("sending")
 		const res = await fetch("/api/contact", {
 			method: "POST",
@@ -42,6 +78,7 @@ export default function ContactForm() {
 			<form
 				className="mt-6 text-neutral-600 font-medium"
 				onSubmit={handleSubmit}
+				noValidate
 			>
 				<div className="grid grid-cols-1 gap-4">
 					<input
@@ -53,6 +90,9 @@ export default function ContactForm() {
 						onChange={handleChange}
 						required
 					/>
+					{errors.name && (
+						<p className="text-red-500 text-sm -mt-3">{errors.name}</p>
+					)}
 					<input
 						type="email"
 						name="email"
@@ -62,6 +102,9 @@ export default function ContactForm() {
 						onChange={handleChange}
 						required
 					/>
+					{errors.email && (
+						<p className="text-red-500 text-sm -mt-3">{errors.email}</p>
+					)}
 					<input
 						type="tel"
 						name="phone"
@@ -70,6 +113,9 @@ export default function ContactForm() {
 						value={form.phone}
 						onChange={handleChange}
 					/>
+					{errors.phone && (
+						<p className="text-red-500 text-sm -mt-3">{errors.phone}</p>
+					)}
 				</div>
 				<textarea
 					name="message"
@@ -80,6 +126,9 @@ export default function ContactForm() {
 					onChange={handleChange}
 					required
 				></textarea>
+				{errors.message && (
+					<p className="text-red-500 text-sm mt-0">{errors.message}</p>
+				)}
 				<button
 					className={`flex justify-center items-center px-4 py-2 border-4 border-primary w-full my-4 shadow-md mx-auto ${
 						status === "sending"
@@ -117,20 +166,17 @@ export default function ContactForm() {
 						<h2 className="text-primary font-bold text-xl">Submit</h2>
 					)}
 				</button>
-				{/* {status === "sending" && (
-					<p className="text-primary mt-2 text-lg text-center">Sending...</p>
-				)} */}
 				{status === "sent" && (
 					<p className="text-green-400 mt-2 text-xl font-bold text-center border-4 border-green-400 px-4 py-2 w-fit mx-auto">
 						Message sent!
 					</p>
 				)}
 				{status === "error" && (
-					<p className="text-red-400 mt-2 text-xl font-bold text-center border-4 border-red-400 px-4 py-2 w-fit mx-auto">
+					<p className="text-red-500 mt-2 text-xl font-bold text-center border-4 border-red-500 px-4 py-2 w-fit mx-auto">
 						Something went wrong. Please try again.
 					</p>
 				)}
-			</form>
+			</form>{" "}
 		</>
 	)
 }
