@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm"
 import Faq from "@/components/Faq"
 import Footer from "@/components/Footer"
 import ProjectCard from "@/components/ProjectCard"
@@ -222,44 +223,7 @@ export default function Home() {
 			>
 				{/* content */}
 				<div className="w-11/12 max-w-prose mx-auto">
-					<div className="flex justify-center items-center px-4 py-2 bg-primary w-fit my-4 lg:mx-auto">
-						<h2 className="text-secondary-blue font-bold text-xl">CONTACT</h2>
-					</div>
-					<p className="text-xl font-bold text-primary">
-						Tell me about your website idea and let's make your vision a
-						reality.
-					</p>
-					{/* form */}
-					<form className="mt-6 text-neutral-600 font-medium">
-						<div className="grid grid-cols-1 gap-4">
-							{/* name */}
-							<input
-								type="text"
-								placeholder="Name"
-								className="bg-primary p-3"
-							/>
-							{/* email */}
-							<input
-								type="email"
-								placeholder="Email"
-								className="bg-primary p-3"
-							/>
-							{/* phone */}
-							<input
-								type="tel"
-								placeholder="Phone (optional)"
-								className="bg-primary p-3"
-							/>
-						</div>
-						<textarea
-							placeholder="Tell me about your idea."
-							className="bg-primary p-3 mt-4 w-full"
-							rows={10}
-						></textarea>
-						<button className="flex justify-center items-center px-4 py-2 border-4 border-primary w-full my-4 shadow-md mx-auto">
-							<h2 className="text-primary font-bold text-xl">Submit</h2>
-						</button>
-					</form>
+					<ContactForm />
 				</div>
 			</section>
 			{/* review 2 */}
