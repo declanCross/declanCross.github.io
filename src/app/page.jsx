@@ -145,7 +145,7 @@ export default function Home() {
 					<div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 						<ProjectCard
 							image={{
-								src: "/images/tubon-salvador-dentistry2.png",
+								src: "/images/webp/tubon-salvador-dentistry2.webp",
 								width: 1884,
 								height: 1884,
 							}}
@@ -154,7 +154,7 @@ export default function Home() {
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/krink1.png",
+								src: "/images/webp/krink1.webp",
 								width: 1883,
 								height: 1884,
 							}}
@@ -163,7 +163,7 @@ export default function Home() {
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/btg1.png",
+								src: "/images/webp/btg1.webp",
 								width: 1876,
 								height: 1884,
 							}}
@@ -172,7 +172,7 @@ export default function Home() {
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/ledream1.png",
+								src: "/images/webp/ledream1.webp",
 								width: 1875,
 								height: 1784,
 							}}
@@ -181,7 +181,7 @@ export default function Home() {
 						/>
 						<ProjectCard
 							image={{
-								src: "/images/2percentbetter1.png",
+								src: "/images/webp/2percentbetter1.webp",
 								width: 1883,
 								height: 1884,
 							}}
