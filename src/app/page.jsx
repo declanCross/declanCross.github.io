@@ -286,17 +286,17 @@ export default function Home() {
 						{/* text */}
 						<div className="max-w-prose md:w-1/2 md:mr-6">
 							<p className="font-medium mt-4 md:mt-0">
-								Hi, my name's Declan Cross, and I started Cross Development
-								Services in 2023 as a way of staying busy while supporting my
-								Wife and newborn Son while living abroad in Australia.
+								Hi, I'm Declan Cross. I started Cross Development Services in
+								2023 to stay productive while supporting my wife and newborn son
+								during our time living abroad in Australia.
 							</p>
 							<p className="font-medium mt-2">
-								I believe the most enjoyable things in life are those you WANT
-								to do. That's why I resonate with web development; it gives me a
-								creative outlet while scratching a problem-solving itch, and it
-								helps my clients' businesses become more profitable and
-								efficient, which frees up time for them to do more of what{" "}
-								<em>they</em> want to do.
+								I believe the most rewarding things in life are those you truly
+								want to do. That's why I resonate with web development—it's a
+								creative outlet that satisfies my problem-solving drive, and it
+								helps my clients build more profitable, efficient businesses.
+								Ultimately, my goal is to give you more time to focus on what
+								matters most to you.
 							</p>
 						</div>
 					</div>
