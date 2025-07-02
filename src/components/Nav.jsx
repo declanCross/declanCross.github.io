@@ -35,18 +35,20 @@ export default function Nav() {
 				{/* logo and hamburger */}
 				<div className="flex justify-between lg:justify-start pl-2 pr-6.5 items-center w-32 lg:w-[710px]">
 					{/* logo */}
-					<Image
-						src="/images/webp/logo2.webp"
-						alt="Logo"
-						width={474}
-						height={453}
-						className="w-10 h-auto cursor-pointer"
-						aria-label="Go to homepage"
-						onClick={() => {
-							window.scrollTo({ top: 0 })
-						}}
-						priority
-					/>
+					<Link href="/#" scroll={false}>
+						<Image
+							src="/images/webp/logo2.webp"
+							alt="Logo"
+							width={474}
+							height={453}
+							className="w-10 h-auto cursor-pointer"
+							aria-label="Go to homepage"
+							priority
+							onClick={() => {
+								window.scrollTo({ top: 0 })
+							}}
+						/>
+					</Link>
 					{/* hamburger menu mobile */}
 					<button
 						className="lg:hidden flex flex-col items-center justify-between w-8 h-7 cursor-pointer"
