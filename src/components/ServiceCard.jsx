@@ -17,6 +17,7 @@ export default function ServiceCard({
 					width={image.width}
 					height={image.height}
 					className="ml-4 w-13 h-auto -mb-5"
+					sizes="(max-width: 1023px) 20vw, 5vw"
 				/>
 			</div>
 			<h4 className="font-bold text-xl my-3">{description}</h4>

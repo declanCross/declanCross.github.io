@@ -64,7 +64,7 @@ export default function Home() {
 							website that ranks highly on search engines.
 						</p>
 					</div>
-					{/* images lg screens */}
+					{/* images front-facing sprites */}
 					<div className="flex items-baseline mt-3 lg:mt-0">
 						<Image
 							src="/images/webp/design2_flip.webp"
@@ -72,6 +72,8 @@ export default function Home() {
 							width={630}
 							height={1020}
 							className="lg:hidden w-14 h-auto"
+							priority
+							sizes="20vw"
 						/>
 						<Image
 							src="/images/webp/design2.webp"
@@ -79,6 +81,8 @@ export default function Home() {
 							width={630}
 							height={1020}
 							className="hidden lg:block lg:w-16 h-auto"
+							priority
+							sizes="5vw"
 						/>
 						<Image
 							src="/images/webp/build2.webp"
@@ -86,6 +90,8 @@ export default function Home() {
 							width={583}
 							height={1024}
 							className="ml-4 w-14 lg:w-16 h-auto"
+							priority
+							sizes="(max-width: 1023px) 20vw, 5vw"
 						/>
 						<Image
 							src="/images/webp/optimize2.webp"
@@ -93,6 +99,8 @@ export default function Home() {
 							width={574}
 							height={1024}
 							className="ml-4 w-14 lg:w-16 h-auto"
+							priority
+							sizes="(max-width: 1023px) 20vw, 5vw"
 						/>
 					</div>
 				</div>
@@ -288,6 +296,7 @@ export default function Home() {
 								width={1921}
 								height={1921}
 								className="w-full h-auto"
+								sizes="(max-width: 767px) 90vw, 40vw"
 							/>
 						</div>
 						{/* text */}

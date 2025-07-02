@@ -10,6 +10,7 @@ export default function ProjectCard({ image, title, link }) {
 					width={image.width}
 					height={image.height}
 					className="mb-4 cursor-pointer lg:opacity-90 hover:opacity-100 transition-opacity duration-300"
+					sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 25vw"
 				/>
 			</Link>
 			<Link

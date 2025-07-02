@@ -44,6 +44,7 @@ export default function Nav() {
 							className="w-10 h-auto cursor-pointer"
 							aria-label="Go to homepage"
 							priority
+							sizes="(max-width: 1023px) 15vw, 5vw"
 							onClick={() => {
 								window.scrollTo({ top: 0 })
 							}}

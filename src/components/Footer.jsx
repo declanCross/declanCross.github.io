@@ -13,6 +13,7 @@ export default function Footer() {
 					width={474}
 					height={453}
 					className="w-2/3 max-w-[275px] h-auto mx-auto mb-6"
+					sizes="(max-width: 460px) 80vw, 275px"
 				/>
 				<h3 className="text-center font-bold text-xl">
 					Cross Development Services
