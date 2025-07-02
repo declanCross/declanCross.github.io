@@ -52,6 +52,9 @@ export default function Nav() {
 					</Link>
 					{/* hamburger menu mobile */}
 					<button
+						aria-label={
+							isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+						}
 						className="lg:hidden flex flex-col items-center justify-between w-8 h-7 cursor-pointer"
 						onClick={toggleMenu}
 					>
