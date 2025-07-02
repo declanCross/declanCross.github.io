@@ -65,27 +65,34 @@ export default function Home() {
 						</p>
 					</div>
 					{/* images lg screens */}
-					<div className="hidden lg:flex items-baseline">
+					<div className="flex items-baseline mt-3 lg:mt-0">
 						<Image
-							src="/images/webp/design1.webp"
+							src="/images/webp/design2_flip.webp"
 							alt="Design Icon"
-							width={671}
-							height={649}
-							className="w-20 h-auto"
+							width={630}
+							height={1020}
+							className="lg:hidden w-14 h-auto"
 						/>
 						<Image
-							src="/images/webp/build1.webp"
+							src="/images/webp/design2.webp"
+							alt="Design Icon"
+							width={630}
+							height={1020}
+							className="hidden lg:block lg:w-16 h-auto"
+						/>
+						<Image
+							src="/images/webp/build2.webp"
 							alt="Build Icon"
-							width={610}
-							height={763}
-							className="ml-4 w-18 h-auto"
+							width={583}
+							height={1024}
+							className="ml-4 w-14 lg:w-16 h-auto"
 						/>
 						<Image
-							src="/images/webp/optimize1.webp"
+							src="/images/webp/optimize2.webp"
 							alt="Optimize Icon"
-							width={766}
-							height={880}
-							className="ml-4 w-19 h-auto"
+							width={574}
+							height={1024}
+							className="ml-4 w-14 lg:w-16 h-auto"
 						/>
 					</div>
 				</div>
@@ -96,8 +103,8 @@ export default function Home() {
 						title="DESIGN"
 						image={{
 							src: "/images/webp/design1.webp",
-							width: 671,
-							height: 649,
+							width: 629,
+							height: 612,
 						}}
 						description="Make your website stand out with a custom design."
 						text1="I combine modern design principles with artistic style to create an effective, unique look and feel for your website."
@@ -109,7 +116,7 @@ export default function Home() {
 						image={{
 							src: "/images/webp/build1.webp",
 							width: 610,
-							height: 763,
+							height: 728,
 						}}
 						description="Bring your site to life with a fully functional build."
 						text1="I use the latest technologies and best practices to create a seamless, high-performance website."
@@ -120,8 +127,8 @@ export default function Home() {
 						title="OPTIMIZE"
 						image={{
 							src: "/images/webp/optimize1.webp",
-							width: 766,
-							height: 880,
+							width: 733,
+							height: 844,
 						}}
 						description="Enhance your website's speed, accessibility, and SEO."
 						text1="I offer a range of optimization services to improve your site's speed, SEO, and overall user experience."
