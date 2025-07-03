@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google"
 import "./globals.css"
 import Nav from "@/components/Nav"
+import { Analytics } from "@vercel/analytics/next"
 
 const montserrat = Montserrat({
 	variable: "--font-montserrat",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
 						<div className="bg-secondary-blue h-full w-[5px]" />
 					</div>
 				</div>
+				<Analytics />
 			</body>
 		</html>
 	)
