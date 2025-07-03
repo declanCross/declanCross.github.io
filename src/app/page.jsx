@@ -5,10 +5,198 @@ import ProjectCard from "@/components/ProjectCard"
 import Review from "@/components/Review"
 import ServiceCard from "@/components/ServiceCard"
 import Image from "next/image"
+import Script from "next/script"
+
+export const metadata = {
+	title: "Cross Development Services | Design, Build, Optimize Your Website",
+	description:
+		"Custom web development services to design, build, and optimize your website for better performance and user experience.",
+	keywords: [
+		"web development",
+		"web design",
+		"custom websites",
+		"website optimization",
+		"SEO services",
+		"responsive web design",
+		"Next.js developer",
+		"frontend development",
+		"backend development",
+		"full stack web developer",
+		"website performance",
+		"website speed optimization",
+		"Pickering web developer",
+		"Toronto web developer",
+		"Canada web development",
+		"Global web development",
+		"professional web services",
+		"small business websites",
+		"portfolio websites",
+		"business website design",
+		"modern web design",
+		"mobile-friendly websites",
+		"website accessibility",
+		"website rebuild",
+		"website redesign",
+		"freelance web developer",
+		"Cross Development Services",
+		"Declan Cross",
+		"affordable web development",
+		"secure websites",
+		"custom web solutions",
+	],
+	openGraph: {
+		title: "Cross Development Services | Design, Build, Optimize Your Website",
+		description:
+			"Custom web development services to design, build, and optimize your website for better performance and user experience.",
+		siteName: "Cross Development Services",
+		url: "https://www.crossdevelopmentservices.com",
+		type: "website",
+		images: [
+			{
+				url: "https://www.crossdevelopmentservices.com/images/webp/logo2.webp",
+				alt: "Cross Development Services logo",
+				width: 474,
+				height: 453,
+			},
+		],
+		locale: "en_CA",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Cross Development Services | Design, Build, Optimize Your Website",
+		description:
+			"Custom web development services to design, build, and optimize your website for better performance and user experience.",
+		images: ["https://www.crossdevelopmentservices.com/images/webp/logo2.webp"],
+	},
+	robots: "index, follow",
+	canonical: "https://www.crossdevelopmentservices.com",
+	language: "en-CA",
+	geo: {
+		latitude: 43.8384,
+		longitude: -79.0868,
+		placeName: "Pickering, ON",
+	},
+	favicon: "https://www.crossdevelopmentservices.com/favicon.ico",
+	paymentAccepted: "Credit Card, Bank Transfer",
+	author: "Declan Cross",
+	publisher: "Cross Development Services",
+	robots: {
+		index: true,
+		follow: true,
+		nocache: false,
+		googleBot: {
+			index: true,
+			follow: true,
+			noimageindex: false,
+		},
+	},
+	icons: {
+		apple: "/apple-touch-icon.png",
+	},
+}
+
+export const viewport = {
+	themeColor: "#fff6dd",
+}
 
 export default function Home() {
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@type": "ProfessionalService",
+		"@id": "https://www.crossdevelopmentservices.com/#organization",
+		name: "Cross Development Services",
+		description:
+			"Custom web development services to design, build, and optimize your website for better performance and user experience.",
+		url: "https://www.crossdevelopmentservices.com",
+		logo: "https://www.crossdevelopmentservices.com/images/webp/logo2.webp",
+		image: [
+			"https://www.crossdevelopmentservices.com/images/webp/logo2.webp",
+			"https://www.crossdevelopmentservices.com/images/webp/dec_icon_hq.webp",
+		],
+		address: {
+			"@type": "PostalAddress",
+			streetAddress: "",
+			addressLocality: "Pickering",
+			addressRegion: "ON",
+			postalCode: "",
+			addressCountry: "CA",
+			geo: {
+				"@type": "GeoCoordinates",
+				latitude: 43.8384,
+				longitude: -79.0868,
+			},
+		},
+		// email: "declan.cds@gmail.com",
+		aggregateRating: {
+			"@type": "AggregateRating",
+			ratingValue: 5,
+			bestRating: 5,
+			ratingCount: 2,
+		},
+		paymentAccepted: "Credit Card, Bank Transfer",
+		areaServed: "Global",
+		founder: {
+			"@type": "Person",
+			name: "Declan Cross",
+			jobTitle: "Web Developer",
+		},
+		services: [
+			{
+				"@type": "Service",
+				name: "Web Development",
+				description:
+					"Custom web development services to design, build, and optimize your website for better performance and user experience.",
+			},
+			{
+				"@type": "Service",
+				name: "Web Design",
+				description:
+					"Custom web design services to create visually stunning and user-friendly websites.",
+			},
+			{
+				"@type": "Service",
+				name: "Website Optimization",
+				description:
+					"Custom website optimization services to improve your site's performance, speed, and user experience.",
+			},
+			{
+				"@type": "Service",
+				name: "SEO Services",
+				description:
+					"Custom SEO services to improve your website's visibility and ranking on search engines.",
+			},
+		],
+		contactPoint: {
+			"@type": "ContactPoint",
+			contactType: "Customer Service",
+			availableLanguage: ["English"],
+			url: "https://www.crossdevelopmentservices.com/#contact",
+		},
+		// review: {
+		// 	"@type": "Review",
+		// 	reviewRating: {
+		// 		"@type": "Rating",
+		// 		ratingValue: "5",
+		// 		bestRating: "5",
+		// 	},
+		// 	author: {
+		// 		"@type": "Person",
+		// 		name: "",
+		// 	},
+		// 	reviewBody: "",
+		// },
+		keywords:
+			"web development, web design, custom websites, website optimization, SEO services, responsive web design, professional web services, small business websites, portfolio websites, business website design, modern web design, mobile-friendly websites, website accessibility, website rebuild, website redesign, freelance web developer, Cross Development Services, Declan Cross, affordable web development, secure websites, custom web solutions",
+	}
+
 	return (
 		<>
+			{/* JSON-LD Script */}
+			<Script
+				id="json-ld"
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
 			{/* landing */}
 			<section className="mt-8 w-11/12 max-w-prose lg:max-w-7xl mx-auto ">
 				<h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-neutral-600 font-bold my-4 lg:my-8">

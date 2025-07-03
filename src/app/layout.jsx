@@ -9,8 +9,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-	title: "Cross Development Services",
-	description: "Design, Build, Optimize your website.",
+	title: "Cross Development Services | Design, Build, Optimize Your Website",
+	description:
+		"Custom web development services to design, build, and optimize your website for better performance and user experience.",
 }
 
 export default function RootLayout({ children }) {
