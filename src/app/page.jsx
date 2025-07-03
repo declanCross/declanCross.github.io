@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm"
 import Faq from "@/components/Faq"
 import Footer from "@/components/Footer"
 import ProjectCard from "@/components/ProjectCard"
+import Review from "@/components/Review"
 import ServiceCard from "@/components/ServiceCard"
 import Image from "next/image"
 
@@ -212,25 +213,16 @@ export default function Home() {
 				</div>
 			</section>
 			{/* review 1 */}
-			<section className="bg-base-light py-16 px-4">
-				{/* content */}
-				<div className="max-w-prose mx-auto">
-					{/* quote */}
-					<div className="flex items-start relative mb-4">
-						<p className="text-3xl leading-none -mt-1 font-medium">"</p>
-						<p className="font-semibold mx-2 text-justify">
-							Declan made me the best website I could have asked for. He
-							listened to me and implemented everything I wanted. Highly
-							recommend!
-						</p>
-						<p className="text-3xl leading-none self-end -mb-1 font-medium">
-							"
-						</p>
-					</div>
-					<p className="font-medium ml-4.5">Person</p>
-					<p className="font-medium text-neutral-500 ml-4.5">Title, Company</p>
-				</div>
-			</section>
+			{/* <Review
+				review={
+					<>
+						Declan made me the best website I could have asked for. He listened
+						to me and implemented everything I wanted. Highly recommend!
+					</>
+				}
+				person="Person"
+				title="Title, Company"
+			/> */}
 			{/* contact */}
 			<section
 				id="contact"
@@ -242,25 +234,16 @@ export default function Home() {
 				</div>
 			</section>
 			{/* review 2 */}
-			<section className="bg-base-light py-16 px-4">
-				{/* content */}
-				<div className="max-w-prose mx-auto">
-					{/* quote */}
-					<div className="flex items-start relative mb-4">
-						<p className="text-3xl leading-none -mt-1 font-medium">"</p>
-						<p className="font-semibold mx-2 text-justify">
-							Declan made me the best website I could have asked for. He
-							listened to me and implemented everything I wanted. Highly
-							recommend!
-						</p>
-						<p className="text-3xl leading-none self-end -mb-1 font-medium">
-							"
-						</p>
-					</div>
-					<p className="font-medium ml-4.5">Person</p>
-					<p className="font-medium text-neutral-500 ml-4.5">Title, Company</p>
-				</div>
-			</section>
+			{/* <Review
+				review={
+					<>
+						Declan made me the best website I could have asked for. He listened
+						to me and implemented everything I wanted. Highly recommend!
+					</>
+				}
+				person="Person"
+				title="Title, Company"
+			/> */}
 			{/* faq */}
 			<section
 				id="faq"
