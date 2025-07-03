@@ -53,10 +53,10 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://www.crossdevelopmentservices.com/images/logo2.png",
+				url: "https://www.crossdevelopmentservices.com/images/logo_big_cds_clear.png",
 				alt: "Cross Development Services logo",
-				width: 474,
-				height: 453,
+				width: 904,
+				height: 877,
 			},
 		],
 		locale: "en_CA",
@@ -66,7 +66,9 @@ export const metadata = {
 		title: "Cross Development Services | Design, Build, Optimize Your Website",
 		description:
 			"Custom web development services to design, build, and optimize your website for better performance and user experience.",
-		images: ["https://www.crossdevelopmentservices.com/images/logo2.png"],
+		images: [
+			"https://www.crossdevelopmentservices.com/images/logo_big_cds_clear.png",
+		],
 	},
 	robots: "index, follow",
 	canonical: "https://www.crossdevelopmentservices.com",
@@ -108,9 +110,9 @@ export default function Home() {
 		description:
 			"Custom web development services to design, build, and optimize your website for better performance and user experience.",
 		url: "https://www.crossdevelopmentservices.com",
-		logo: "https://www.crossdevelopmentservices.com/images/logo2.png",
+		logo: "https://www.crossdevelopmentservices.com/images/logo_big_cds_clear.png",
 		image: [
-			"https://www.crossdevelopmentservices.com/images/logo2.png",
+			"https://www.crossdevelopmentservices.com/images/logo_big_cds_clear.png",
 			"https://www.crossdevelopmentservices.com/images/webp/dec_icon_hq.webp",
 		],
 		address: {
