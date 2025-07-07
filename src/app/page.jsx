@@ -403,16 +403,24 @@ export default function Home() {
 				</div>
 			</section>
 			{/* review 1 */}
-			{/* <Review
+			<Review
 				review={
 					<>
-						Declan made me the best website I could have asked for. He listened
-						to me and implemented everything I wanted. Highly recommend!
+						Creating my website with Declan was smooth sailing. Declan is
+						professional and super easy to work with. He was able to communicate
+						his ideas and suggest various options that met my wants and needs
+						for this website. Declan especially created a unique homepage that
+						was innovative and represented me and my business to the tea. He
+						also was very open to making changes that better suited what I was
+						looking for. From the homepage to the smaller details (like the
+						effects when you scroll down the website), you can tell that he
+						enjoys what he does and cares to give his client the best website
+						possible. I highly recommend him!
 					</>
 				}
-				person="Person"
-				title="Title, Company"
-			/> */}
+				person="Krystle"
+				title="Tattoo Artist, BYKR.INK"
+			/>
 			{/* contact */}
 			<section
 				id="contact"
