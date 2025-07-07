@@ -88,6 +88,19 @@ export default function Footer() {
 				<p className="text-sm my-2 font-medium text-center">
 					<span>© 2025 Cross Development Services</span>
 				</p>
+				<p className="text-sm my-2 font-medium text-center">
+					<span>
+						Site design and build by{" "}
+						<Link
+							href="https://www.crossdevelopmentservices.com"
+							className="text-neutral-600 hover:text-secondary-blue transform transition-colors duration-300"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Cross Development Services
+						</Link>
+					</span>
+				</p>
 			</section>
 		</>
 	)
