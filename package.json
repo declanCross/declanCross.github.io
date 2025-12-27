@@ -1,28 +1,28 @@
 {
-	"name": "project",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"postbuild": "next-sitemap",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@vercel/analytics": "^1.5.0",
-		"@vercel/speed-insights": "^1.2.0",
-		"next": "15.3.3",
-		"nodemailer": "^7.0.4",
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
-	},
-	"devDependencies": {
-		"@eslint/eslintrc": "^3",
-		"@tailwindcss/postcss": "^4",
-		"eslint": "^9",
-		"eslint-config-next": "15.3.3",
-		"next-sitemap": "^4.2.3",
-		"tailwindcss": "^4"
-	}
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
+    "next": "15.3.8",
+    "nodemailer": "^7.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "next-sitemap": "^4.2.3",
+    "tailwindcss": "^4"
+  }
 }
