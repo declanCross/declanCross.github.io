@@ -86,7 +86,7 @@ export default function Footer() {
 					</span>
 				</p>
 				<p className="text-sm my-2 font-medium text-center">
-					<span>© 2025 Cross Development Services</span>
+					<span>© 2026 Cross Development Services</span>
 				</p>
 				<p className="text-sm my-2 font-medium text-center">
 					<span>
