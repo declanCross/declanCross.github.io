@@ -264,7 +264,7 @@ export default function Home() {
 							height={1020}
 							className="lg:hidden w-14 h-auto"
 							priority
-							sizes="20vw"
+							sizes="56px"
 						/>
 						<Image
 							src="/images/webp/design2.webp"
@@ -273,7 +273,7 @@ export default function Home() {
 							height={1020}
 							className="hidden lg:block lg:w-16 h-auto"
 							priority
-							sizes="5vw"
+							sizes="64px"
 						/>
 						<Image
 							src="/images/webp/build2.webp"
@@ -282,7 +282,7 @@ export default function Home() {
 							height={1024}
 							className="ml-4 w-14 lg:w-16 h-auto"
 							priority
-							sizes="(max-width: 1023px) 20vw, 5vw"
+							sizes="(max-width: 1023px) 56px, 64px"
 						/>
 						<Image
 							src="/images/webp/optimize2.webp"
@@ -291,7 +291,7 @@ export default function Home() {
 							height={1024}
 							className="ml-4 w-14 lg:w-16 h-auto"
 							priority
-							sizes="(max-width: 1023px) 20vw, 5vw"
+							sizes="(max-width: 1023px) 56px, 64px"
 						/>
 					</div>
 				</div>

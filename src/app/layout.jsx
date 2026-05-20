@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 				<Nav />
 				<div className="flex justify-between">
 					{/* body */}
-					<div className="mt-14 w-[calc(100%-10px)]">{children}</div>
+					<main className="mt-14 w-[calc(100%-10px)]">{children}</main>
 					{/* side colors swoop */}
 					<div className="flex w-[10px] h-100vh">
 						<div className="bg-secondary-green h-full w-[5px]" />
