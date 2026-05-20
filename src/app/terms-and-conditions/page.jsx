@@ -1,5 +1,15 @@
 import Footer from "@/components/Footer"
 
+export const metadata = {
+	title: "Terms and Conditions | Cross Development Services",
+	description:
+		"Read the terms and conditions for using Cross Development Services, including contact form usage, intellectual property, privacy, and project agreements.",
+	alternates: {
+		canonical: "https://www.crossdevelopmentservices.com/terms-and-conditions",
+	},
+	robots: { index: true, follow: true },
+}
+
 export default function Page() {
 	return (
 		<>

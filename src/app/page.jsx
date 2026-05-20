@@ -70,17 +70,11 @@ export const metadata = {
 			"https://www.crossdevelopmentservices.com/images/logo_big_cds_clear.png",
 		],
 	},
-	robots: "index, follow",
-	canonical: "https://www.crossdevelopmentservices.com",
-	language: "en-CA",
-	geo: {
-		latitude: 43.8384,
-		longitude: -79.0868,
-		placeName: "Pickering, ON",
+	alternates: {
+		canonical: "https://www.crossdevelopmentservices.com",
 	},
-	favicon: "https://www.crossdevelopmentservices.com/favicon.ico",
-	paymentAccepted: "Credit Card, Bank Transfer",
-	author: "Declan Cross",
+	authors: [{ name: "Declan Cross" }],
+	creator: "Declan Cross",
 	publisher: "Cross Development Services",
 	robots: {
 		index: true,

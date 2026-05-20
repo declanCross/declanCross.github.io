@@ -44,7 +44,7 @@ export default function Nav() {
 							className="w-10 h-auto cursor-pointer"
 							aria-label="Go to homepage"
 							priority
-							sizes="(max-width: 1023px) 15vw, 5vw"
+							sizes="40px"
 							onClick={() => {
 								window.scrollTo({ top: 0 })
 							}}
@@ -148,55 +148,56 @@ export default function Nav() {
 					{/* nav links desktop */}
 					<ul className="hidden lg:flex w-[700px] space-x-6 text-base-dark font-bold ml-8">
 						<li>
-							<a
+							<Link
 								href="/#"
-								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								scroll={false}
+								className="text-base-dark hover:text-secondary-blue transition-colors duration-300"
 								onClick={() => {
 									window.scrollTo({ top: 0 })
 								}}
 							>
 								Home
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/#services"
-								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								className="text-base-dark hover:text-secondary-blue transition-colors duration-300"
 							>
 								Services
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/#portfolio"
-								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								className="text-base-dark hover:text-secondary-blue transition-colors duration-300"
 							>
 								Portfolio
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/#contact"
-								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								className="text-base-dark hover:text-secondary-blue transition-colors duration-300"
 							>
 								Contact
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/#faq"
-								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								className="text-base-dark hover:text-secondary-blue transition-colors duration-300"
 							>
 								FAQ
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/#about-me"
-								className="text-base-dark hover:text-secondary-blue transform transition-colors duration-300"
+								className="text-base-dark hover:text-secondary-blue transition-colors duration-300"
 							>
 								About Me
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>

@@ -84,6 +84,7 @@ export default function ContactForm() {
 					<input
 						type="text"
 						name="name"
+						aria-label="Name"
 						placeholder="Name"
 						className="bg-primary p-3"
 						value={form.name}
@@ -96,6 +97,7 @@ export default function ContactForm() {
 					<input
 						type="email"
 						name="email"
+						aria-label="Email address"
 						placeholder="Email"
 						className="bg-primary p-3"
 						value={form.email}
@@ -108,6 +110,7 @@ export default function ContactForm() {
 					<input
 						type="tel"
 						name="phone"
+						aria-label="Phone number (optional)"
 						placeholder="Phone (optional)"
 						className="bg-primary p-3"
 						value={form.phone}
@@ -119,6 +122,7 @@ export default function ContactForm() {
 				</div>
 				<textarea
 					name="message"
+					aria-label="Message"
 					placeholder="Tell me about your idea."
 					className="bg-primary p-3 mt-4 w-full"
 					rows={10}
@@ -160,10 +164,10 @@ export default function ContactForm() {
 									d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
 								></path>
 							</svg>
-							<h2 className="text-primary font-bold text-xl">Sending...</h2>
+							<span className="text-primary font-bold text-xl">Sending...</span>
 						</span>
 					) : (
-						<h2 className="text-primary font-bold text-xl">Submit</h2>
+						<span className="text-primary font-bold text-xl">Submit</span>
 					)}
 				</button>
 				{status === "sent" && (
